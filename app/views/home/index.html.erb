@@ -58,24 +58,33 @@
 <!-- mainMiddle view -->
 <div class="mainMiddle">
   <!-- mainMiddle__1 view -->
-  <div class="mainMiddle__1 col-md-10 m-auto pt-5" id="aboutUs">
-    <h2 class="text-center my-5 font-weight-bold">＜MRTとは、MRTの魅力＞</h2>
-    <p class="text-center m-0">
-      MRTとは、<strong>人生の生きがい。</strong><br>
-      MRTとは、Moving Rejoice Trigger(動く、喜ぶ、キッカケ）を基盤にお客様一人一人に寄り添った個別パーソナルトレーナーです。<br>
-      パフォーマンスが上がらないから楽しめない。身体が思う様にならない。
-      動けない。＝楽しめない要因の１つだと感じていることがほとんどだと思います。<br>
-      MRT最大の魅力はあなた一人ひとりに適するメニューを立てて通常のトレーニングから、
-      メンテナンス、 人の身体に基づいた使い方指導など、幅広い視点から身体にアプローチし、動ける喜びも獲得出来ます。<br>
-      <strong>結果効率的にパフォーマンスなど各自の目標に近く事ができます。</strong>
-    </p>
-    <div class="mainMiddle__1__youtube text-center">
-      <p class="pt-5 m-0">
-        管理人（アーリー）の動画です↓
-        解剖学に基づいて肩痛について解説しています。
+  <div class="d-flex">
+
+    <div class="mainMiddle__1" id="aboutUs">
+      <h2 class="text-center my-5 font-weight-bold">＜MRTとは、MRTの魅力＞</h2>
+      <p class="text-center m-0">
+        MRTとは、<strong>人生の生きがい。</strong><br>
+        MRTとは、Moving Rejoice Trigger(動く、喜ぶ、キッカケ）を基盤にお客様一人一人に寄り添った個別パーソナルトレーナーです。<br>
+        パフォーマンスが上がらないから楽しめない。身体が思う様にならない。
+        動けない。＝楽しめない要因の１つだと感じていることがほとんどだと思います。<br>
+        MRT最大の魅力はあなた一人ひとりに適するメニューを立てて通常のトレーニングから、
+        メンテナンス、 人の身体に基づいた使い方指導など、幅広い視点から身体にアプローチし、動ける喜びも獲得出来ます。<br>
+        <strong>結果効率的にパフォーマンスなど各自の目標に近く事ができます。</strong>
       </p>
-      <iframe src="https://www.youtube.com/embed/OXQFmX4ka4Q?start=86" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="mainMiddle__1__youtube text-center">
+        <p class="pt-5 m-0">
+          管理人（アーリー）の動画です↓
+          解剖学に基づいて肩痛について解説しています。
+        </p>
+        <iframe src="https://www.youtube.com/embed/OXQFmX4ka4Q?start=86" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
+
+    <div class="reserv mt-5 mx-3 d-none d-md-block">
+      <p class="text-center font-weight-bold">＜ご予約はこちら↓＞</p>
+      <iframe width="300" height="1100" src="https://select-type.com/rsv/?id=LMUisEDszBs&w_flg=1" frameborder="0"></iframe>
+    </div>
+
   </div>
   <!-- mainMiddle__2 view -->
   <div class="mainMiddle__2 mt-5 pt-5 text-white" id="postOf3">
@@ -145,6 +154,12 @@
     </div>
   </div>
 </div>
+
+<div class="phoneSize__reserv mt-5 mx-sm-5">
+  <p class="text-center font-weight-bold">＜ご予約はこちら↓＞</p>
+  <iframe src="https://select-type.com/rsv/?id=LMUisEDszBs&w_flg=1" frameborder="0"></iframe>
+</div>
+  
 <!-- footer view -->
 <footer class="mt-5">
   <div class="footerContents d-sm-flex py-5">
@@ -154,8 +169,11 @@
         SNS定期更新してます!!!<br>
         ご質問なども承っていますので是非みていって下さいね！
       </p>
-      <i class="fab fa-facebook p-3"></i>
-      <i class="fab fa-instagram p-3"></i>
+      <%# <i class="fab fa-facebook p-3"></i>
+      <i class="fab fa-instagram p-3"></i> %>
+      <%= icon("fab","facebook",class: "p-3 footerContents__left--icon")%>
+      <%= icon("fab","instagram",class: "p-3 footerContents__left--icon")%>
+
     </div>
     <div class="footerContents__right col-sm-6 text-center pt-5 pt-sm-0" id="contactForm">
       <h3>＜Contact Form＞</h3>
