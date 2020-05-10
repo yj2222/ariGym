@@ -391,7 +391,7 @@ footer{
     font-size: 16px;
   }
 }
-
+// formConfirm css
 .formConfirmModal{
   background-color: rgba(0, 0, 0, 0.331);
   width: 100%;
@@ -399,24 +399,22 @@ footer{
   position: fixed;
   top: 0;
   z-index: 100;
+  .formConfirmModal__text{
+    max-width: 500px;
+    /* height: 100%; */
+    background-color: white;
+    font-size: 16px;
+    button{
+      width: 200px;
+      font-size: 16px;
+    }
+    #formConfirm__message{
+      height: 200px;
+      overflow: scroll;
+    }
+  }
 }
 
-.formConfirmModal__text{
-  max-width: 500px;
-  /* height: 100%; */
-  background-color: white;
-  font-size: 16px;
-}
-
-.formConfirmModal__text button{
-  width: 200px;
-  font-size: 16px;
-}
-
-#formConfirm__message{
-  height: 200px;
-  overflow: scroll;
-}
 // sending message css
 .sendingMessage{
   background-color: rgba(0, 0, 0, 0.331);
