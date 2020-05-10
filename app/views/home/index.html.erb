@@ -19,6 +19,7 @@
         <li><%= link_to "MRTとは", "#aboutUs" %></li>
         <li><%= link_to "MRT3つの柱", "#postOf3" %></li>
         <li><%= link_to "メニュー", "#menuList" %></li>
+        <li><%= link_to "ご予約", "#reserv" %></li>
         <li><%= link_to "お問い合わせ", "#contactForm" %></li>
         <%# <li><a href="#aboutUs">MRTとは</a></li>
         <li><a href="#postOf3">MRT3つの柱</a></li>
@@ -38,6 +39,7 @@
       <li class="pl-5"><a href="#aboutUs">MRTとは</a></li>
       <li class="pl-5"><a href="#postOf3">MRT3つの柱</a></li>
       <li class="pl-5"><a href="#menuList">メニュー</a></li>
+      <li class="pl-5"><a href="#reserv">ご予約</a></li>
       <li class="pl-5"><a href="#contactForm">お問い合わせ</a></li>
     </ul>
   </div>
@@ -60,7 +62,7 @@
   <!-- mainMiddle__1 view -->
   <div class="d-flex">
 
-    <div class="mainMiddle__1" id="aboutUs">
+    <div class="mainMiddle__1 pt-5" id="aboutUs">
       <h2 class="text-center my-5 font-weight-bold">＜MRTとは、MRTの魅力＞</h2>
       <p class="text-center m-0">
         MRTとは、<strong>人生の生きがい。</strong><br>
@@ -80,7 +82,7 @@
       </div>
     </div>
 
-    <div class="reserv mt-5 mx-3 d-none d-md-block">
+    <div class="reserv mt-5 mx-3 d-none d-md-block pt-5">
       <p class="text-center font-weight-bold">＜ご予約はこちら↓＞</p>
       <iframe width="300" height="1100" src="https://select-type.com/rsv/?id=LMUisEDszBs&w_flg=1" frameborder="0"></iframe>
     </div>
@@ -155,8 +157,8 @@
   </div>
 </div>
 
-<div class="phoneSize__reserv mt-5 mx-sm-5">
-  <p class="text-center font-weight-bold">＜ご予約はこちら↓＞</p>
+<div class="phoneSize__reserv pt-5 mx-sm-5" id="reserv">
+  <p class="text-center font-weight-bold pt-5">＜ご予約はこちら↓＞</p>
   <iframe src="https://select-type.com/rsv/?id=LMUisEDszBs&w_flg=1" frameborder="0"></iframe>
 </div>
   
@@ -171,8 +173,13 @@
       </p>
       <%# <i class="fab fa-facebook p-3"></i>
       <i class="fab fa-instagram p-3"></i> %>
-      <%= icon("fab","facebook",class: "p-3 footerContents__left--icon")%>
-      <%= icon("fab","instagram",class: "p-3 footerContents__left--icon")%>
+      
+      <%= link_to "#" do %>
+        <%= icon("fab","facebook",class: "p-3 footerContents__left--icon")%>
+      <% end %>
+      <%= link_to "#" do %>
+        <%= icon("fab","instagram",class: "p-3 footerContents__left--icon")%>
+      <% end %>
 
     </div>
     <div class="footerContents__right col-sm-6 text-center pt-5 pt-sm-0" id="contactForm">
